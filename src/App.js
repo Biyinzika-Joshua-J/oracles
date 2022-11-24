@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import {useEffect, useState} from 'react';
+import Home from './pages/home.js';
+import Navbar from './layouts/navbar/navbar.js';
+import Footer from './layouts/footer/footer.js';
 import './App.css';
 
+
+const apiKey = '097f4b188d76be6149494abdaf2c5253';
+
+
 function App() {
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+     <Navbar/>
+      <Home/>
+    <Footer/>
+   </>
   );
 }
 
