@@ -1,10 +1,12 @@
+import {Container} from '../layouts/container/container'
+import DisplayScripture from '../components/displayScripture/displayScripture';
 
 const Home = () =>{
 
     return (
-        <div>
-            home
-        </div>
+        <Container>
+            <DisplayScripture/>
+        </Container>
     )
 }
 

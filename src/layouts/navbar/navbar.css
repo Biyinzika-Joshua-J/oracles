@@ -1,0 +1,19 @@
+nav{
+    padding: 1rem 0;
+}
+
+.logo{
+    font-size: 2rem;
+    font-family: "Patrick Hand", "cursive", "sans-serif";
+    color: #00005C;
+    font-weight: 800;
+}
+
+.navbar-content{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content .nav-items{
+    margin-left: auto;
+}

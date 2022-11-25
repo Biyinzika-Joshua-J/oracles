@@ -1,0 +1,44 @@
+footer{
+    position: absolute;
+    background-color: #F0CAA3;
+    color: #00005C;
+    font-family: "Patrick Hand", "cursive", "sans-serif";
+}
+
+footer h2{
+    font-size: 2rem;
+}
+
+.footer-col{
+    font-size: 1.5rem;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col a{
+    text-decoration: none;
+}
+
+.footer-col a:hover{
+    text-decoration: underline;
+}
+
+.footer-col a:active{
+    color: #00005C;
+}
+
+.footer-content::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #00005C;
+}
+
+.copyright p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+}

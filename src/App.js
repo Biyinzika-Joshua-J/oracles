@@ -10,7 +10,7 @@ const apiKey = '097f4b188d76be6149494abdaf2c5253';
 
 function App() {
 
- 
+
   return (
    <>
      <Navbar/>

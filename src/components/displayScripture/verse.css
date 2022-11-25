@@ -1,0 +1,23 @@
+.verse{
+    display: flex;
+    align-items: baseline;
+    padding: .5rem 0;
+}
+
+.number{
+    margin: 0 .5rem 0 0;
+}
+
+.text{
+   
+}
+
+.text::selection, .number::selection{
+    color: #fff;
+    background: #00005C; 
+}
+
+.text::-moz-selection, .number::-moz-selection {
+    color: #fff;
+    background: #00005C;
+  }

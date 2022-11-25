@@ -5,6 +5,7 @@ export const extractVerses = (data) =>{
            text:'verse text',
        }
    */
+  if (!data) return;
    let verses = [],
        verseText = '',
        verNum = 1;
