@@ -1,0 +1,8 @@
+.select-verse{
+    width: 70vw;
+    background-color: #000;
+    height: 400px;
+    z-index: 20;
+    opacity: 1 !important;
+    
+}

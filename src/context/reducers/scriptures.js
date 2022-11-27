@@ -3,7 +3,7 @@ import {extractVerses} from '../../utils/bible/extractversesfromchapters'
 
 
 let initialState = {
-    loading:false,
+    loading:true,
     scriptures:[],
     error:'error occured',
 };
@@ -21,7 +21,7 @@ export const fetchScriptures =  createAsyncThunk('scriptures/fetchScriptures', (
     })
             .then(response => response.json())
             .then(data => extractVerses(data['data']['content']))
-            .catch(err => console.log(err.message))
+            .catch(err => console.log(err))
 })
 
 export const scripturesSlice = createSlice({

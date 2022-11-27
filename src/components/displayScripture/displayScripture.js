@@ -14,10 +14,12 @@ const DisplayScripture = () => {
         dispatch(fetchScriptures());
     }, [])
 
+   console.log(scriptures.scriptures)
    
     
     return (
         <div>
+
 
             {scriptures.loading && <div>loading</div>}
             
