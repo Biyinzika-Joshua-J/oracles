@@ -1,0 +1,12 @@
+.book{
+    margin: .3rem 0;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.book-name{
+    text-align: center;
+}

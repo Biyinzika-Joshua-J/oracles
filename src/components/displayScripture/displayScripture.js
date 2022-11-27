@@ -9,14 +9,16 @@ import Verse from './verse';
 const DisplayScripture = () => {
     const scriptures = useSelector(state => state.scripture.value);
     const dispatch = useDispatch();
+    
 
     useEffect(()=>{
         dispatch(fetchScriptures());
     }, [])
 
-   console.log(scriptures.scriptures)
    
-    
+   
+
+
     return (
         <div>
 
@@ -25,7 +27,7 @@ const DisplayScripture = () => {
             
             {!scriptures.loading && scriptures.scriptures.map((verse, index)=>{
                 return (
-                    <Verse number={verse.number} text={verse.text}/>
+                    <Verse key={index} number={verse.number} text={verse.text}/>
                 )
           })}
         

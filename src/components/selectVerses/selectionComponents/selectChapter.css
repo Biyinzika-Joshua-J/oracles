@@ -1,0 +1,11 @@
+.chapter-btn{
+    border: none;
+    padding: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+
+}
+
+.chapter-btn:active{
+    transform: scale(.9);
+}

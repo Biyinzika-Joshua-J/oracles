@@ -1,24 +1,25 @@
 #overlay{
-    background-color: #3B185F;
+    background-color: rgba(60, 24, 95, 0.897);
     position: fixed;
-    height: 100%;
-    width: 100%;
     top: 0;
     left: 0;
-    opacity: .7;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -20;
     transition: all .5s;
+  
+   
 }
 
 #overlay .modal-content{
-   background-color: #000;
-   position: absolute;
-   top: 30%;
-   left: 50%;
- 
-   
-   transform: translate(-50%, -50%);
+    position: fixed;
+    top: 20vh;
+    left: 50%;
+    width: 70%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: -30;
+    transform: translate(-50%, -10%);
+    animation: slide-down 300ms ease-out forwards;
 }
