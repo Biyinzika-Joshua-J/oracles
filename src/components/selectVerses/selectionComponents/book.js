@@ -6,7 +6,7 @@ import {updateNext} from '../../../context/reducers/chapters'
 
 function Book({name, id, chapters}) {
     const dispatch = useDispatch();
-
+    
     function processChapters(){
         dispatch(updateNext());
         if (chapters.length >= 1) dispatch(upDateChapters(chapters));
