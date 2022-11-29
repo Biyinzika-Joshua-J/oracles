@@ -5,6 +5,7 @@ import {fetchScriptures} from '../../context/reducers/scriptures';
 import {useFetchChapterVerses} from '../../hooks/useFetchChapterVerses';
 import { useState, useEffect } from 'react';
 import Verse from './verse';
+import NavigationBtns from './navigationBtns';
 
 const DisplayScripture = () => {
     const scriptures = useSelector(state => state.scripture.value);
@@ -21,7 +22,7 @@ const DisplayScripture = () => {
 
     return (
         <div>
-
+            <NavigationBtns/>
 
             {scriptures.loading && <div>loading</div>}
             
