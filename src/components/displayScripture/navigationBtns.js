@@ -7,21 +7,23 @@ function NavigationBtns(props) {
     const chapters = useSelector(state => state.chapters.value.chapters.length);
     const dispatch = useDispatch();
     //const [current, setCurrent] = useState(parseInt(currentChapter));
-    let current = 1;
+    const [current, setCurrent] = useState(1);
 
     
     function next(){
         if (book === 'GEN' && currentChapter <= 50){
-            current++;
+            setCurrent(current => current+1);
         }
 
         if (book !== 'GEN' && chapters>=1 ){
             if (current <= chapters){
-                current++;
+                setCurrent(current => current+1);
             }
         }
         dispatch(fetchScriptures(`${book}.${current}`))
     }
+
+    console.log(current);
    
 
     return (
